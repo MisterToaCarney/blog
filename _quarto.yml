@@ -1,0 +1,16 @@
+project:
+  type: website
+
+website:
+  title: "toa"
+  navbar:
+    right:
+      - icon: github
+        href: https://github.com/MisterToaCarney
+format:
+  html:
+    theme: pulse
+    css: styles.css
+
+
+

@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code Test",
+    "section": "",
+    "text": "This is a post with executable code.\n\nprint(\"kekwlol\")\n\nTest is in progress"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "toa",
+    "section": "",
+    "text": "What’s your I/Q?\n\n\n\n\n\n\n\ncode\n\n\ngnuradio\n\n\ndsp\n\n\n\n\nAn introduction to I/Q sampling\n\n\n\n\n\n\nApr 7, 2023\n\n\nToa Carney\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/new-post/index.html",
+    "href": "posts/new-post/index.html",
+    "title": "New Post",
+    "section": "",
+    "text": "This is a test\n\na = np.random.randn(2,10000)\n\nfig, ax = plt.subplots()\ns = 2*np.sin(2*np.pi*np.sqrt(a[0]**2 + a[1]**2)) + 2\nax.scatter(a[0], a[1], s=s)\nplt.axis(\"off\")\nplt.show()"
+  },
+  {
+    "objectID": "posts/new-post/oldindex.html",
+    "href": "posts/new-post/oldindex.html",
+    "title": "New Post",
+    "section": "",
+    "text": "This is a test\n\nnp.random.randn()\n\n-0.6920006149755328"
+  },
+  {
+    "objectID": "posts/quadrature-modulation/index.html",
+    "href": "posts/quadrature-modulation/index.html",
+    "title": "What’s your I/Q?",
+    "section": "",
+    "text": "If you’ve ever messed around with software defined radio hardware, you may have come accross I/Q signals. They are a fundamental concept in signal processing, but as a beginner I never fully understood what they are and why they exist."
+  },
+  {
+    "objectID": "posts/quadrature-modulation/index.html#its-all-about-representation",
+    "href": "posts/quadrature-modulation/index.html#its-all-about-representation",
+    "title": "What’s your I/Q?",
+    "section": "It’s all about representation",
+    "text": "It’s all about representation\nFirst, let’s remind ourselves what an SDR recciver actually does. At a fundamental level, they convert radio waves reccived by the antenna into digital samples able to be interpreted by a computer program. In other words, they are a kind of Analog to Digital Converter.\n\n\n\n\n\n\nWhat are samples?\n\n\n\n\n\nA sample is a discrete measurement of the signal taken at a point in time. Think of them as like pixels in an image. The SDR receiver takes many measurements of the reccieved signal at regular intervals. The rate in which these measurements are taken is called the Sample Rate\n\n\n\n\n\n\n\n\nWhen we sample at a given rate, there is a limit to the highest frequency we can reproduce without loosing information. This is called the Nyqist Frequency. The Nyquist frequency is half of the sample rate. E.g. if we sample at 48000Hz then the highest frequency we can reproduce is 24000Hz.\n\nsps = 20\nf = 5\nend = 0.5\n\nx = np.arange(0,end,0.001)\nx_d = np.arange(0,end, 1/sps)\n\nfig, ax = plt.subplots()\nax.grid()\nax.plot(x, np.cos(2*np.pi*f*x))\nax.plot(x_d, np.cos(2*np.pi*f*x_d))"
+  },
+  {
+    "objectID": "posts/quadrature-modulation/index.html#its-all-about-how-we-represent-radio-signals-in-a-computer",
+    "href": "posts/quadrature-modulation/index.html#its-all-about-how-we-represent-radio-signals-in-a-computer",
+    "title": "What’s your I/Q?",
+    "section": "It’s all about how we represent radio signals in a computer",
+    "text": "It’s all about how we represent radio signals in a computer\nFirst, let’s remind ourselves what an SDR recciver actually does. At the most basic level, they convert electromagnetic waves reccived by the antenna into digital samples able to be interpreted by a computer program.\nWhat is a sample? It’s a singular measurement"
+  }
+]

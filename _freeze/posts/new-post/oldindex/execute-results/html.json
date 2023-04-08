@@ -1,0 +1,11 @@
+{
+  "hash": "16d4e43e2a403c6812f0858adc7bb5b7",
+  "result": {
+    "markdown": "---\ntitle: \"New Post\"\nauthor: \"Toa Carney\"\ndate: \"2023-04-03\"\ndraft: false\ncategories: [news, code, analysis]\n# image: \"image.jpg\"\n---\n\nThis is a test\n\n\n\n::: {.cell execution_count=2}\n``` {.python .cell-code}\nnp.random.randn()\n```\n\n::: {.cell-output .cell-output-display execution_count=2}\n```\n-0.6920006149755328\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "oldindex_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
